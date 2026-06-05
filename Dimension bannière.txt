@@ -1,0 +1,19 @@
+La bannière est rendue avec un ratio 16:5 (≈ 3.2:1).
+
+Recommandations
+Ratio obligatoire : 16:5 (sinon l'image sera rognée par resizeMode="cover")
+
+Dimensions conseillées (pour rester net même sur écrans denses @2x/@3x) :
+
+Usage	Largeur × Hauteur
+Recommandé (qualité @3x)	1200 × 375 px
+Minimum acceptable	800 × 250 px
+Maximum utile	1600 × 500 px
+Pourquoi 16:5 ? Le composant calcule BANNER_H = BANNER_W × 0.32 (src/components/AdBanner.jsx:11) — sur un téléphone Android typique (360 px de largeur, marges 20 px), ça donne environ 320 × 102 px affichés. Avec une source 1200×375, tu obtiens ~3.7× la résolution affichée → texte et logos restent crispés.
+
+Format
+PNG ou JPG (PNG si transparence/logos ; JPG si photo, fichier plus léger)
+Taille fichier : viser < 200 Ko (compresser via TinyPNG/Squoosh avant upload)
+Zone de sécurité : laisse ~40 px de marge autour du texte/logo important (le titleOverlay du composant ajoute un bandeau noir en bas qui peut masquer la zone basse)
+Côté image picker
+Quand tu uploades via l'écran admin sur device, l'expo-image-picker est déjà configuré avec aspect: [16, 5] (src/screens/AdminAdsScreen.jsx) — il propose un crop automatique au bon ratio. Tu peux donc partir d'une image plus grande, l'app fera le recadrage.

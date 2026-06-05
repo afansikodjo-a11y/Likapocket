@@ -1,24 +1,92 @@
 {
   "expo": {
-    "name": "Lika",
-    "slug": "Lika",
+    "name": "LikaPocket",
+    "slug": "LikaPocket",
     "version": "1.0.0",
+    "scheme": "likapocket",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.likapocket.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "LikaPocket utilise la caméra pour scanner les QR codes de paiement offline.",
+        "NSFaceIDUsageDescription": "LikaPocket utilise Face ID pour déverrouiller votre portefeuille en toute sécurité.",
+        "NSContactsUsageDescription": "LikaPocket accède à vos contacts pour sélectionner rapidement le destinataire d'un transfert.",
+        "NSPhotoLibraryUsageDescription": "LikaPocket accède à votre galerie pour téléverser des bannières publicitaires depuis l'espace admin."
+      }
     },
     "android": {
+      "package": "com.likapocket.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#D69E4E",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.INTERNET",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.READ_CONTACTS",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.CALL_PHONE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "LikaPocket utilise la caméra pour scanner les QR codes de paiement offline."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "LikaPocket utilise Face ID pour déverrouiller votre portefeuille en toute sécurité."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "LikaPocket accède à vos contacts pour sélectionner rapidement le destinataire d'un transfert."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "LikaPocket accède à votre galerie pour téléverser des bannières publicitaires depuis l'espace admin."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": false,
+            "enableShrinkResourcesInReleaseBuilds": false,
+            "enableMinifyInReleaseBuilds": false
+          }
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "extra": {
+      "supabaseUrl": "",
+      "supabaseAnonKey": "",
+      "eas": {
+        "projectId": "bc36b10e-c6cc-42dc-84ca-b38ee6050a77"
+      }
+    },
+    "owner": "likapocket"
   }
 }

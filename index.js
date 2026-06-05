@@ -1,3 +1,7 @@
+// Polyfill crypto.getRandomValues() before anything else imports crypto-js.
+// Required for AES + nonce generation in src/crypto/qrCrypto.js
+import 'react-native-get-random-values';
+
 import { registerRootComponent } from 'expo';
 
 import App from './App';

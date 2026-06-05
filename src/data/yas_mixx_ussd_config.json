@@ -1,0 +1,179 @@
+{
+  "operator": "Yas Togo",
+  "last_updated": "2026-05",
+  "unified_root_code": "*909#",
+  "mixx_root_code": "*145#",
+  "description": "Fichier de configuration des syntaxes USSD et arborescence des services pour l'intégration automatique dans les modules d'automatisation (Claude Code / Assistants / Dialers).",
+  "services_mobile_yas": {
+    "menus_principaux": [
+      {
+        "service": "Menu Principal",
+        "code": "*909#",
+        "description": "Accès racine à tous les services Yas"
+      },
+      {
+        "service": "Mon Numéro",
+        "code": "*555#",
+        "description": "Afficher le numéro de la carte SIM actuelle"
+      }
+    ],
+    "forfaits_internet_net": {
+      "menu_racine": "*909*2#",
+      "codes_express": [
+        { "nom": "Net100",  "volume": "45 Mo",                "validite": "24h",     "code": "*909*212#" },
+        { "nom": "Net199",  "volume": "1 Go Nuit (22h-06h)",  "validite": "1 nuit",  "code": "*909*217#" },
+        { "nom": "Net200",  "volume": "100 Mo",               "validite": "24h",     "code": "*909*213#" },
+        { "nom": "Net250 Alèz", "volume": "250 Mo",           "validite": "24h",     "code": "*909*250#" },
+        { "nom": "Net1499", "volume": "5 Go",                 "validite": "3 jours", "code": "*909*218#" },
+        { "nom": "Net4900", "volume": "15 Go",                "validite": "7 jours", "code": "*909*223#" }
+      ]
+    },
+    "forfaits_mixtes_ovo": {
+      "menu_racine": "*909*3#",
+      "description": "Forfaits combinés Appels + SMS + Data"
+    },
+    "forfaits_voix_lema": {
+      "menu_racine": "*909*4#",
+      "description": "Forfaits d'appels nationaux uniquement"
+    },
+    "assistance_et_credit": [
+      {
+        "service": "Sos Crédit (Prêt)",
+        "code": "*909*5*1#",
+        "description": "Emprunter du crédit de communication (Frais 10%)"
+      },
+      {
+        "service": "Achat de forfait pour autrui",
+        "code": "*909*7#",
+        "description": "Offrir un forfait à un autre numéro Yas"
+      }
+    ],
+    "roaming_et_international": [
+      {
+        "service": "Activation Roaming",
+        "code": "*909*611#",
+        "description": "Activer les services à l'étranger (Ancien code: *104*1*1#)"
+      },
+      {
+        "service": "Achat de forfaits Roaming",
+        "code": "*909*612#",
+        "description": "Forfaits utilisables en déplacement"
+      },
+      {
+        "service": "Forfaits Internationaux",
+        "code": "*909*62#",
+        "description": "Appels vers l'extérieur"
+      }
+    ],
+    "fidelite_et_fixe": [
+      {
+        "service": "Programme SoWe",
+        "code": "*909*81#",
+        "description": "Gestion des points de fidélité et communauté"
+      },
+      {
+        "service": "Abonnement Yas Fibre",
+        "code": "*909*10#",
+        "description": "Gestion ou recharge de la ligne internet fixe"
+      }
+    ]
+  },
+  "services_financiers_mixx": {
+    "menu_racine": "*145#",
+    "description": "Anciennement T-Money. Gérable également via l'onglet Mixx du *909#.",
+    "operations_portefeuille": [
+      {
+        "service": "Consultation Solde",
+        "code": "*145*6*1#",
+        "description": "Demande directe du code PIN pour afficher le solde Mixx"
+      },
+      {
+        "service": "Retrait d'argent (Agent)",
+        "code": "*145*2#",
+        "description": "Initier un retrait chez un agent physique"
+      },
+      {
+        "service": "Retrait DAB",
+        "code": "*145*2*2#",
+        "description": "Générer un code de retrait pour guichet automatique"
+      }
+    ],
+    "transferts_argent": [
+      {
+        "service": "Envoi National",
+        "code": "*145*1*1#",
+        "syntaxe_directe": "*145*1*1*[NUMERO]*[MONTANT]*[PIN]#",
+        "description": "Envoi de fonds vers un compte Mixx national"
+      },
+      {
+        "service": "Envoi International",
+        "code": "*145*1*2#",
+        "description": "Envoi vers la zone UEMOA"
+      },
+      {
+        "service": "Envoi sans compte",
+        "code": "*145*1*3#",
+        "description": "Générer un code de retrait pour un bénéficiaire sans compte"
+      }
+    ],
+    "recharges_et_paiements": [
+      {
+        "service": "Achat Crédit (Soi-même)",
+        "code": "*145*3*1*1#",
+        "syntaxe_directe": "*145*3*1*1*[MONTANT]*[PIN]#",
+        "description": "Acheter du crédit Yas avec son solde Mixx"
+      },
+      {
+        "service": "Achat Crédit (Autrui)",
+        "code": "*145*3*1*2#",
+        "syntaxe_directe": "*145*3*1*2*[NUMERO]*[MONTANT]*[PIN]#",
+        "description": "Envoyer du crédit à un proche avec son solde Mixx"
+      },
+      {
+        "service": "Achat Forfait Net via Mixx",
+        "code": "*145*3*21#",
+        "description": "Acheter un forfait internet directement via Mixx"
+      },
+      {
+        "service": "Achat Forfait Ovo via Mixx",
+        "code": "*145*3*22#",
+        "description": "Acheter un forfait mixte directement via Mixx"
+      },
+      {
+        "service": "Paiement Marchand (Mixx Pay)",
+        "code": "*145*4*4#",
+        "syntaxe_directe": "*145*4*4*[CODE_MARCHAND]*[MONTANT]*[PIN]#",
+        "description": "Règlement d'achats chez un commerçant agréé"
+      },
+      {
+        "service": "Facture CEET (Électricité)",
+        "code": "*145*4*1#",
+        "description": "Paiement de facture d'électricité"
+      },
+      {
+        "service": "Facture TdE (Eau)",
+        "code": "*145*4*2#",
+        "description": "Paiement de facture d'eau"
+      },
+      {
+        "service": "Réabonnement Canal+",
+        "code": "*145*4*3#",
+        "description": "Renouvellement d'abonnement TV"
+      }
+    ],
+    "passerelle_bancaire": [
+      {
+        "service": "Menu Bank to Wallet / Wallet to Bank",
+        "code": "*145*6*1*2#",
+        "description": "Transférer des fonds entre un compte bancaire lié (ex: Orabank) et Mixx"
+      }
+    ],
+    "securite_annulation": [
+      {
+        "service": "Auto-annulation (Self-Reversal)",
+        "code": "*145*7#",
+        "description": "Annuler instantanément une erreur d'envoi avant retrait"
+      }
+    ]
+  }
+}
