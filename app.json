@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "LikaPocket",
+    "name": "LikaPay",
     "slug": "LikaPocket",
     "version": "1.0.0",
     "scheme": "likapocket",
@@ -11,10 +11,10 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.likapocket.app",
       "infoPlist": {
-        "NSCameraUsageDescription": "LikaPocket utilise la caméra pour scanner les QR codes de paiement offline.",
-        "NSFaceIDUsageDescription": "LikaPocket utilise Face ID pour déverrouiller votre portefeuille en toute sécurité.",
-        "NSContactsUsageDescription": "LikaPocket accède à vos contacts pour sélectionner rapidement le destinataire d'un transfert.",
-        "NSPhotoLibraryUsageDescription": "LikaPocket accède à votre galerie pour téléverser des bannières publicitaires depuis l'espace admin."
+        "NSCameraUsageDescription": "LikaPay utilise la caméra pour scanner les QR codes de paiement offline.",
+        "NSFaceIDUsageDescription": "LikaPay utilise Face ID pour déverrouiller votre portefeuille en toute sécurité.",
+        "NSContactsUsageDescription": "LikaPay accède à vos contacts pour sélectionner rapidement le destinataire d'un transfert.",
+        "NSPhotoLibraryUsageDescription": "LikaPay accède à votre galerie pour téléverser des bannières publicitaires depuis l'espace admin."
       }
     },
     "android": {
@@ -39,7 +39,22 @@
       ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name": "LikaPay",
+      "shortName": "LikaPay",
+      "lang": "fr",
+      "description": "LikaPay : portefeuille, budgets et coffres d'épargne, même hors ligne.",
+      "themeColor": "#D69E4E",
+      "backgroundColor": "#111111",
+      "display": "standalone",
+      "orientation": "portrait",
+      "startUrl": "/",
+      "output": "single",
+      "splash": {
+        "backgroundColor": "#111111",
+        "resizeMode": "contain",
+        "image": "./assets/splash-icon.png"
+      }
     },
     "plugins": [
       "expo-sqlite",
@@ -47,25 +62,25 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "LikaPocket utilise la caméra pour scanner les QR codes de paiement offline."
+          "cameraPermission": "LikaPay utilise la caméra pour scanner les QR codes de paiement offline."
         }
       ],
       [
         "expo-local-authentication",
         {
-          "faceIDPermission": "LikaPocket utilise Face ID pour déverrouiller votre portefeuille en toute sécurité."
+          "faceIDPermission": "LikaPay utilise Face ID pour déverrouiller votre portefeuille en toute sécurité."
         }
       ],
       [
         "expo-contacts",
         {
-          "contactsPermission": "LikaPocket accède à vos contacts pour sélectionner rapidement le destinataire d'un transfert."
+          "contactsPermission": "LikaPay accède à vos contacts pour sélectionner rapidement le destinataire d'un transfert."
         }
       ],
       [
         "expo-image-picker",
         {
-          "photosPermission": "LikaPocket accède à votre galerie pour téléverser des bannières publicitaires depuis l'espace admin."
+          "photosPermission": "LikaPay accède à votre galerie pour téléverser des bannières publicitaires depuis l'espace admin."
         }
       ],
       [

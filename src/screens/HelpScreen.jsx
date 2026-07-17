@@ -57,7 +57,7 @@ const SECTIONS = [
       },
       {
         q: 'Mon téléphone est volé, que faire ?',
-        a: `1. Depuis un autre appareil, va sur l'app LikaPocket → écran de connexion → "Mot de passe oublié" pour réinitialiser. 2. Contacte l'administrateur sur WhatsApp pour bloquer ton compte. 3. Si tu avais activé le PIN/biométrie, ton solde est protégé contre l'accès non autorisé.`,
+        a: `1. Depuis un autre appareil, va sur l'app LikaPay → écran de connexion → "Mot de passe oublié" pour réinitialiser. 2. Contacte l'administrateur sur WhatsApp pour bloquer ton compte. 3. Si tu avais activé le PIN/biométrie, ton solde est protégé contre l'accès non autorisé.`,
       },
       {
         q: 'Mon argent est-il en sécurité ?',
@@ -78,7 +78,7 @@ const SECTIONS = [
     items: [
       {
         q: 'Le scan QR ne fonctionne pas',
-        a: `Vérifie que tu as autorisé l'accès à la caméra : Paramètres → Applications → LikaPocket → Autorisations → Caméra. Assure-toi aussi que tu es en bonne lumière et que le QR n'est pas flou ou trop loin.`,
+        a: `Vérifie que tu as autorisé l'accès à la caméra : Paramètres → Applications → LikaPay → Autorisations → Caméra. Assure-toi aussi que tu es en bonne lumière et que le QR n'est pas flou ou trop loin.`,
       },
       {
         q: 'Mon solde ne se met pas à jour après une recharge',
@@ -94,7 +94,7 @@ const SECTIONS = [
       },
       {
         q: 'L\'application est lente ou plante',
-        a: `Ferme et redémarre l'application. Si le problème persiste, vide le cache de l'app : Paramètres → Applications → LikaPocket → Stockage → Vider le cache. Aucune donnée ne sera perdue.`,
+        a: `Ferme et redémarre l'application. Si le problème persiste, vide le cache de l'app : Paramètres → Applications → LikaPay → Stockage → Vider le cache. Aucune donnée ne sera perdue.`,
       },
     ],
   },
@@ -152,7 +152,7 @@ export default function HelpScreen({ navigation }) {
   const [openKey, setOpenKey] = useState(null);
 
   const contactEmail = () => {
-    Linking.openURL(`mailto:${ADMIN_EMAIL}?subject=${encodeURIComponent('Support LikaPocket')}`)
+    Linking.openURL(`mailto:${ADMIN_EMAIL}?subject=${encodeURIComponent('Support LikaPay')}`)
       .catch(() => Alert.alert('Erreur', `Contactez ${ADMIN_EMAIL}`));
   };
 
@@ -206,7 +206,7 @@ export default function HelpScreen({ navigation }) {
             style={s.waBtn}
             activeOpacity={0.85}
             onPress={() => openWhatsAppToAdmin(
-              `Bonjour, j'ai besoin d'aide concernant LikaPocket.\n\n(Décris ton problème ici)`,
+              `Bonjour, j'ai besoin d'aide concernant LikaPay.\n\n(Décris ton problème ici)`,
             )}
           >
             <Phone size={18} color="#FFF" strokeWidth={2.4} />

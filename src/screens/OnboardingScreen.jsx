@@ -19,7 +19,7 @@ const SLIDES = [
     icon:     Coins,
     iconBg:   ['#D69E4E', '#B5822D'],
     title:    'Ne perdez plus\nvos pièces',
-    subtitle: 'Chaque reliquat compte. LikaPocket convertit la monnaie de tes achats en solde numérique, sécurisé sur ton téléphone.',
+    subtitle: 'Chaque reliquat compte. LikaPay convertit la monnaie de tes achats en solde numérique, sécurisé sur ton téléphone.',
     accent:   COLORS.gold,
   },
   {
@@ -35,7 +35,7 @@ const SLIDES = [
     icon:     Smartphone,
     iconBg:   ['#7C3AED', '#A78BFA'],
     title:    'Reliez à votre\nMobile Money',
-    subtitle: 'Convertis ton solde LikaPocket en Orange Money, Wave ou Moov en un clic. Recharge aussi facilement.',
+    subtitle: 'Convertis ton solde LikaPay en Orange Money, Wave ou Moov en un clic. Recharge aussi facilement.',
     accent:   '#7C3AED',
   },
 ];

@@ -7,7 +7,7 @@
 
 | | |
 |---|---|
-| **Produit** | Lika (LikaPocket) — application mobile de paiement |
+| **Produit** | Lika (LikaPay) — application mobile de paiement |
 | **Version** | 1.0 |
 | **Zone cible** | UEMOA (XOF) & CEMAC (XAF) — 14 pays |
 | **Porteur de projet** | _[À compléter : nom, raison sociale, statut juridique]_ |

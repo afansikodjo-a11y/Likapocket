@@ -69,7 +69,7 @@ export async function dialUSSD(ussd) {
       {
         title: 'Autoriser l\'envoi de codes USSD',
         message:
-          'LikaPocket envoie les codes USSD directement à ta SIM pour un raccourci instantané. Aucun appel téléphonique ne sera passé sans ton action.',
+          'LikaPay envoie les codes USSD directement à ta SIM pour un raccourci instantané. Aucun appel téléphonique ne sera passé sans ton action.',
         buttonPositive: 'Autoriser',
         buttonNegative: 'Refuser',
       },

@@ -1,4 +1,4 @@
-# LikaPocket — Plan de développement
+# LikaPay — Plan de développement
 
 ## 1. Infrastructure de base
 - ~~Init projet Expo SDK 56 + dépendances~~

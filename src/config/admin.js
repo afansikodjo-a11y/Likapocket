@@ -79,7 +79,7 @@ function _buildIdentityBlock({ requestId, fullName, userEmail, userPhone, countr
 export function buildTopUpMessage({ amount, requestId, fullName, userEmail, userPhone, country }) {
   const identity = _buildIdentityBlock({ requestId, fullName, userEmail, userPhone, country });
   return (
-    `Bonjour, je souhaite faire une *RECHARGE* de ${amount.toLocaleString('fr-FR')} F CFA sur LikaPocket.\n\n` +
+    `Bonjour, je souhaite faire une *RECHARGE* de ${amount.toLocaleString('fr-FR')} F CFA sur LikaPay.\n\n` +
     `${identity}\n\n` +
     `Merci de m'indiquer comment régler.`
   );
@@ -93,7 +93,7 @@ export function buildWithdrawMessage({
 }) {
   const identity = _buildIdentityBlock({ requestId, fullName, userEmail, userPhone, country });
   return (
-    `Bonjour, je souhaite faire un *RETRAIT* de ${amount.toLocaleString('fr-FR')} F CFA depuis mon compte LikaPocket.\n\n` +
+    `Bonjour, je souhaite faire un *RETRAIT* de ${amount.toLocaleString('fr-FR')} F CFA depuis mon compte LikaPay.\n\n` +
     `${identity}\n\n` +
     `💳 Numéro destinataire : ${destination ?? '(à préciser)'}\n` +
     `Merci de m'indiquer la procédure.`

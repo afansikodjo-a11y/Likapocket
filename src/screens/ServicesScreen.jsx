@@ -135,7 +135,7 @@ export default function ServicesScreen({ navigation }) {
 
         {/* Footnote */}
         <Text style={s.footnote}>
-          LikaPocket ne traite aucune transaction — l'app ouvre seulement le dialer de ton téléphone avec le bon code USSD. C'est ta SIM qui communique avec l'opérateur, en toute sécurité.
+          LikaPay ne traite aucune transaction — l'app ouvre seulement le dialer de ton téléphone avec le bon code USSD. C'est ta SIM qui communique avec l'opérateur, en toute sécurité.
         </Text>
       </ScrollView>
     </View>

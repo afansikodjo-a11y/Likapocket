@@ -82,7 +82,7 @@ export async function getBiometricLabel() {
   }
 }
 
-export async function authenticateBiometric(reason = 'Déverrouiller LikaPocket') {
+export async function authenticateBiometric(reason = 'Déverrouiller LikaPay') {
   const LA = _getLA();
   if (!LA) return false;
   try {

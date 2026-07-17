@@ -15,7 +15,7 @@ const LAST_UPDATE = '24 mai 2026';
 const ARTICLES = [
   {
     title: 'Article 1 — Objet du service',
-    body: `LikaPocket est un portefeuille électronique mobile permettant à ses utilisateurs de gérer des reliquats de monnaie, d'effectuer des paiements offline entre particuliers et marchands, et de recharger / retirer des fonds via des opérations Mobile Money ou virements.
+    body: `LikaPay est un portefeuille électronique mobile permettant à ses utilisateurs de gérer des reliquats de monnaie, d'effectuer des paiements offline entre particuliers et marchands, et de recharger / retirer des fonds via des opérations Mobile Money ou virements.
 
 Le service est édité et développé par NAMATECH, et destiné prioritairement aux utilisateurs des pays de la zone Franc CFA (UEMOA et CEMAC).
 
@@ -31,7 +31,7 @@ Contact éditeur :
 
 2.3. Un seul compte par personne est autorisé. La création de comptes multiples peut entraîner leur suspension.
 
-2.4. LikaPocket se réserve le droit de refuser une inscription ou de suspendre un compte sans préavis en cas de soupçon de fraude, d'usurpation d'identité ou de violation des présentes conditions.`,
+2.4. LikaPay se réserve le droit de refuser une inscription ou de suspendre un compte sans préavis en cas de soupçon de fraude, d'usurpation d'identité ou de violation des présentes conditions.`,
   },
   {
     title: 'Article 3 — Sécurité du compte',
@@ -39,13 +39,13 @@ Contact éditeur :
 
 3.2. En cas de perte ou de vol de son appareil, l'utilisateur doit immédiatement réinitialiser son mot de passe et contacter l'administrateur via WhatsApp pour bloquer son compte.
 
-3.3. LikaPocket recommande fortement l'activation du code PIN et/ou de la biométrie pour protéger les opérations sensibles.
+3.3. LikaPay recommande fortement l'activation du code PIN et/ou de la biométrie pour protéger les opérations sensibles.
 
 3.4. Toute opération effectuée après authentification valide (PIN, biométrie ou session active) est réputée provenir du titulaire du compte.`,
   },
   {
     title: 'Article 4 — Opérations financières',
-    body: `4.1. Les recharges et retraits sont soumis à validation par l'administrateur LikaPocket dans un délai maximum de 24 heures ouvrées.
+    body: `4.1. Les recharges et retraits sont soumis à validation par l'administrateur LikaPay dans un délai maximum de 24 heures ouvrées.
 
 4.2. Les transactions de reliquat (envoi/réception de QR) sont instantanées et irrévocables une fois le QR scanné et validé.
 
@@ -58,7 +58,7 @@ Contact éditeur :
   },
   {
     title: 'Article 5 — Frais et tarifs',
-    body: `5.1. La création et le maintien d'un compte LikaPocket sont gratuits.
+    body: `5.1. La création et le maintien d'un compte LikaPay sont gratuits.
 
 5.2. Les transactions peer-to-peer (envoi/réception de reliquats entre utilisateurs) sont gratuites.
 
@@ -68,17 +68,17 @@ Contact éditeur :
   },
   {
     title: 'Article 6 — Limites de responsabilité',
-    body: `6.1. LikaPocket décline toute responsabilité en cas de partage volontaire d'un QR code par l'utilisateur (photographie, capture d'écran, transmission à un tiers non autorisé).
+    body: `6.1. LikaPay décline toute responsabilité en cas de partage volontaire d'un QR code par l'utilisateur (photographie, capture d'écran, transmission à un tiers non autorisé).
 
 6.2. Les transactions confirmées par PIN ou biométrie sont réputées autorisées par l'utilisateur et sont irrévocables.
 
-6.3. LikaPocket n'est pas responsable des paiements effectués en dehors de l'application (espèces, virements, échanges WhatsApp avec l'administrateur) ni des éventuels litiges commerciaux entre utilisateurs.
+6.3. LikaPay n'est pas responsable des paiements effectués en dehors de l'application (espèces, virements, échanges WhatsApp avec l'administrateur) ni des éventuels litiges commerciaux entre utilisateurs.
 
-6.4. Le service est fourni "tel quel". LikaPocket ne garantit pas une disponibilité ininterrompue mais s'engage à assurer la meilleure continuité possible.`,
+6.4. Le service est fourni "tel quel". LikaPay ne garantit pas une disponibilité ininterrompue mais s'engage à assurer la meilleure continuité possible.`,
   },
   {
     title: 'Article 7 — Données personnelles',
-    body: `7.1. LikaPocket collecte les données suivantes : email, numéro de téléphone, nom complet (si renseigné), pays, historique des transactions, identifiant unique de l'appareil.
+    body: `7.1. LikaPay collecte les données suivantes : email, numéro de téléphone, nom complet (si renseigné), pays, historique des transactions, identifiant unique de l'appareil.
 
 7.2. Ces données sont hébergées sur les serveurs Supabase situés en Europe (conformes RGPD).
 
@@ -90,7 +90,7 @@ Contact éditeur :
   },
   {
     title: 'Article 8 — Modification des conditions',
-    body: `8.1. LikaPocket se réserve le droit de modifier les présentes Conditions Générales d'Utilisation à tout moment.
+    body: `8.1. LikaPay se réserve le droit de modifier les présentes Conditions Générales d'Utilisation à tout moment.
 
 8.2. Toute modification substantielle sera notifiée à l'utilisateur via une bannière dans l'application au moins 30 jours avant son entrée en vigueur.
 
@@ -100,13 +100,13 @@ Contact éditeur :
     title: 'Article 9 — Résiliation',
     body: `9.1. L'utilisateur peut clôturer son compte à tout moment, à condition que son solde soit à 0 F CFA. La demande s'effectue via WhatsApp à l'administrateur.
 
-9.2. LikaPocket se réserve le droit de résilier un compte sans préavis en cas de :
+9.2. LikaPay se réserve le droit de résilier un compte sans préavis en cas de :
    • Fraude avérée ou tentative de fraude
    • Violation grave des présentes conditions
    • Utilisation du service à des fins illégales
    • Inactivité prolongée (plus de 24 mois consécutifs)
 
-9.3. En cas de résiliation par LikaPocket, le solde du compte est restitué à l'utilisateur dans un délai de 30 jours, sauf en cas de fraude où il pourra être saisi à titre de réparation.`,
+9.3. En cas de résiliation par LikaPay, le solde du compte est restitué à l'utilisateur dans un délai de 30 jours, sauf en cas de fraude où il pourra être saisi à titre de réparation.`,
   },
   {
     title: 'Article 10 — Loi applicable et juridiction',
@@ -157,7 +157,7 @@ export default function TermsScreen({ navigation }) {
         {/* Preamble */}
         <View style={s.preambleCard}>
           <Text style={s.preambleTxt}>
-            En utilisant LikaPocket, tu acceptes les conditions suivantes. Nous t'invitons à les lire attentivement et à conserver une copie pour référence future.
+            En utilisant LikaPay, tu acceptes les conditions suivantes. Nous t'invitons à les lire attentivement et à conserver une copie pour référence future.
           </Text>
         </View>
 
@@ -172,10 +172,10 @@ export default function TermsScreen({ navigation }) {
         {/* Footer */}
         <View style={s.footer}>
           <Text style={s.footerTxt}>
-            En continuant à utiliser LikaPocket, tu confirmes avoir lu et accepté les présentes conditions.
+            En continuant à utiliser LikaPay, tu confirmes avoir lu et accepté les présentes conditions.
           </Text>
           <Text style={s.footerVersion}>
-            LikaPocket · v1.0 · {LAST_UPDATE}{'\n'}
+            LikaPay · v1.0 · {LAST_UPDATE}{'\n'}
             Édité par NAMATECH
           </Text>
         </View>

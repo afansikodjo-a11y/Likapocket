@@ -106,11 +106,11 @@ export default function PinScreen({ navigation, route, mode: modeProp, onUnlock,
 
   // ── Title + subtitle by step ──
   const ui = {
-    create:  { title: 'Choisis un code PIN', subtitle: 'Ce code protégera ton accès à LikaPocket.' },
+    create:  { title: 'Choisis un code PIN', subtitle: 'Ce code protégera ton accès à LikaPay.' },
     confirm: { title: 'Confirme ton code',   subtitle: 'Saisis à nouveau le code à 4 chiffres.' },
     old:     { title: 'Code actuel',         subtitle: 'Entre ton code PIN actuel pour le modifier.' },
     new:     { title: 'Nouveau code PIN',    subtitle: 'Choisis un nouveau code à 4 chiffres.' },
-    verify:  { title: 'Code PIN',            subtitle: 'Entre ton code pour déverrouiller LikaPocket.' },
+    verify:  { title: 'Code PIN',            subtitle: 'Entre ton code pour déverrouiller LikaPay.' },
   }[step];
 
   const reset = () => {
@@ -209,7 +209,7 @@ export default function PinScreen({ navigation, route, mode: modeProp, onUnlock,
 
   // ── Biometric handler ──
   const handleBio = async () => {
-    const ok = await authenticateBiometric('Déverrouiller LikaPocket');
+    const ok = await authenticateBiometric('Déverrouiller LikaPay');
     if (ok) {
       onSuccess?.();
       if (canCancel) navigation.goBack();

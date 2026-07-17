@@ -484,7 +484,7 @@ export default function AuthScreen() {
         </View>
 
         <Text style={s.footerNote}>
-          En continuant, vous acceptez les conditions d'utilisation de LikaPocket.
+          En continuant, vous acceptez les conditions d'utilisation de LikaPay.
         </Text>
       </ScrollView>
 

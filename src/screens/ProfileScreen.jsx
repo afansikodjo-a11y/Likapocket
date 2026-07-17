@@ -377,7 +377,7 @@ export default function ProfileScreen({ navigation }) {
                   <Text style={s.signoutTxt}>Se déconnecter</Text>
                 </>}
           </TouchableOpacity>
-          <Text style={s.versionTxt}>LikaPocket · v1.0.0</Text>
+          <Text style={s.versionTxt}>LikaPay · v1.0.0</Text>
         </View>
       </ScrollView>
 

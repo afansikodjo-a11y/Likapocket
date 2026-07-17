@@ -278,6 +278,11 @@ export default function FinanceScreen({ navigation }) {
         <Text style={s.footnote}>
           Ton argent placé dans un coffre quitte ton solde dépensable et y revient au déblocage.
         </Text>
+        {Platform.OS === 'web' && (
+          <Text style={s.footnote}>
+            Sur navigateur web, tes coffres sont enregistrés uniquement sur cet appareil et ne sont pas synchronisés avec l'app mobile.
+          </Text>
+        )}
       </ScrollView>
     </View>
   );

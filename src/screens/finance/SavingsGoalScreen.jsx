@@ -153,6 +153,11 @@ export default function SavingsGoalScreen({ navigation, route }) {
                   et revient au déblocage.
                 </Text>
               </View>
+              {Platform.OS === 'web' && (
+                <Text style={s.hint}>
+                  Sur navigateur web, ce coffre sera enregistré uniquement sur cet appareil et ne sera pas synchronisé avec l'app mobile.
+                </Text>
+              )}
 
               <Text style={s.label}>NOM DU COFFRE</Text>
               <View style={s.inputBox}>
@@ -222,6 +227,11 @@ export default function SavingsGoalScreen({ navigation, route }) {
                   {'  ·  '}Déblocage le {String(goal.unlock_date).slice(0, 10)}
                 </Text>
               </LinearGradient>
+              {Platform.OS === 'web' && (
+                <Text style={s.hint}>
+                  Sur navigateur web, ce coffre est enregistré uniquement sur cet appareil et n'est pas synchronisé avec l'app mobile.
+                </Text>
+              )}
 
               {isClosed ? (
                 <View style={s.closedBox}>
