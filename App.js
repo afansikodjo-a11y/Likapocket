@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { AppState, Platform, View, StyleSheet } from 'react-native';
+import { AppState, Platform, View, StyleSheet, useWindowDimensions } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AppNavigator from './src/navigation/AppNavigator';
 import { startNetworkListener } from './src/services/syncService';
@@ -7,8 +7,14 @@ import useAppStore from './src/store/useAppStore';
 import { COLORS } from './src/theme';
 
 const IS_WEB = Platform.OS === 'web';
+// En dessous de cette largeur, la fenêtre EST déjà un téléphone : pas besoin
+// du gabarit décoratif, qui gaspillerait de l'espace écran (barres noires).
+const FRAME_BREAKPOINT = 500;
 
 export default function App() {
+  const { width } = useWindowDimensions();
+  const showFrame = IS_WEB && width >= FRAME_BREAKPOINT;
+
   useEffect(() => {
     const stopSync = startNetworkListener((result) => {
       useAppStore.getState().setLastSyncResult(result);
@@ -28,11 +34,11 @@ export default function App() {
     return () => sub.remove();
   }, []);
 
-  // Sur web (test depuis un ordinateur), on encadre l'app dans un gabarit de
-  // type téléphone, centré et de hauteur plafonnée, pour éviter qu'elle ne
-  // s'étire sur toute la fenêtre (gros vide sous la barre d'onglets).
-  // Sur mobile natif, on rend l'app plein écran sans modification.
-  if (IS_WEB) {
+  // Sur web depuis un grand écran (desktop), on encadre l'app dans un gabarit
+  // de type téléphone, centré et de hauteur plafonnée, pour éviter qu'elle ne
+  // s'étire sur toute la fenêtre. Sur un vrai téléphone (mobile natif ou
+  // navigateur mobile), on rend l'app plein écran sans cadre.
+  if (showFrame) {
     return (
       <SafeAreaProvider>
         <View style={styles.webPage}>
