@@ -1,5 +1,5 @@
 /**
- * Génère les icônes PWA (web) de LikaPay à partir des assets déjà générés
+ * Génère les icônes PWA (web) de LikaPocket à partir des assets déjà générés
  * par scripts/generate-icons.js — ne dépend pas du logo source haute résolution.
  *
  * Usage :

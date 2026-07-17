@@ -1,6 +1,6 @@
 # Version web (PWA)
 
-LikaPay est une seule base de code Expo servant le mobile natif (iOS/Android)
+LikaPocket est une seule base de code Expo servant le mobile natif (iOS/Android)
 et le web. Le web n'est pas un projet séparé : les fichiers `*.web.js` déjà
 présents dans `src/` (ex. `src/database/index.web.js`, `src/services/supabase.web.js`)
 remplacent automatiquement leur équivalent natif au moment du build web.

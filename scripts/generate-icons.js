@@ -1,5 +1,5 @@
 /**
- * Génère toutes les variantes d'icônes LikaPay à partir d'un logo source.
+ * Génère toutes les variantes d'icônes LikaPocket à partir d'un logo source.
  *
  * Usage :
  *   node scripts/generate-icons.js
@@ -33,7 +33,7 @@ if (!fs.existsSync(SOURCE)) {
   process.exit(1);
 }
 
-console.log('🎨 Génération des icônes LikaPay…\n');
+console.log('🎨 Génération des icônes LikaPocket…\n');
 
 async function generate() {
   // 1. icon.png — 1024×1024, fond doré + logo centré à 70%

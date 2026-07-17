@@ -1,5 +1,5 @@
 /**
- * Config Workbox pour le service worker web de LikaPay.
+ * Config Workbox pour le service worker web de LikaPocket.
  *
  * Scope volontairement limité à l'app shell (HTML, JS bundlé, manifest,
  * icônes) — aucune règle runtimeCaching pour Supabase : les appels réseau

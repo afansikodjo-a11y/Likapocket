@@ -98,7 +98,7 @@ export default function ScanScreen({ navigation }) {
           </View>
           <Text style={s.permTitle}>Accès caméra requis</Text>
           <Text style={s.permBody}>
-            LikaPay a besoin de la caméra pour scanner les QR codes des marchands.
+            LikaPocket a besoin de la caméra pour scanner les QR codes des marchands.
           </Text>
           <TouchableOpacity style={s.permBtn} onPress={requestPermission} activeOpacity={0.88}>
             <Text style={s.permBtnTxt}>Autoriser la caméra</Text>

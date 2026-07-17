@@ -1,7 +1,7 @@
 {
-  "name": "LikaPay",
-  "short_name": "LikaPay",
-  "description": "LikaPay : portefeuille, budgets et coffres d'épargne, même hors ligne.",
+  "name": "LikaPocket",
+  "short_name": "LikaPocket",
+  "description": "LikaPocket : portefeuille, budgets et coffres d'épargne, même hors ligne.",
   "lang": "fr",
   "start_url": "/",
   "display": "standalone",
